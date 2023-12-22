@@ -12,3 +12,4 @@ class TextDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, idx):
         return self.labels[idx], self.embeddings[self.tokens[idx], :]
+
